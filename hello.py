@@ -54,5 +54,7 @@ print(name, age, "eves")
 print(name + " " +str(age) + " eves")
 print(f"A {name} emberke {age} éves")
 print(name, age, "eves", sep="-**-")
-print("alma"+"körte")
+print("meggy"+"körte")
+
+print("Hello Github")
 
