@@ -1,0 +1,61 @@
+Python:
+-interpretált prog. nyelv (nem fordítóprogramos)
+-dinamikusan típusos nyelv
+-oktatásra találták ki
+-script nyelv
+-van IDE (integrated development enviroment)
+   Pycharm
+   VS Code
+-Platformfüggetlen
+-sokan mondják hogy lassú a python de nem igaz (interpretálás közbe fordít nem futtatás közbe, ezért lassabban melegszik be)
+-ugyanazt a programot egyszer lefuttatod a python lassab lesz, de 5 futtatásután ugyanolyan
+
+Amire jó:
+-automatizálásra jó (automate the boring stuff with python)
+          tesztautomazizálés
+           devops (üzemeltetési feladatok automatizálása)
+-matematikai alkalmazások
+-big data (az a big data amit nem tudsz egy számítógéppel feldolgozni)
+-apró webes alkalmazások megvalósítása (gyorsan lehet vele haladni, de könnyű hibázni benn keretrendszer (django, flash)
+-vastag kliens alkalmazás írás
+-ubuntu linux standard prog nyelve
+-IoT elterjedt nyelve (internet of things)
+
+Amire nem jó:
+-nagyobb webes banki alkalmazások írására (nagyobb hibalehetőség miatt)
+-rendszerközeli dolgok írására
+
+
+Python könyvek:
+Python 3 - nagyon részletes, aprólékos és nehéz olvasni
+szoft. fejlesztés okosan pythonnal - rövid és könnyű azoknak akik már programoznak
+unideb.hu oldalán: hogyan gondolkozz úgy mint egy informatikus: tanulás python 3 segítségével
+https://mtmi.unideb.hu/pluginfile.php/554/mod_resource/content/3/thinkcspy3.pdf
+
+
+
+venv könyvtárba soha nem nyúlunk bele, nem töltjük fel gitre sem
+virtual enviroment
+Keyboard shortcuts
+file:///C:/Program%20Files%20(x86)/JetBrains/PyCharm%20Community%20Edition%202021.3.2/help/ReferenceCard.pdf
+
+Programozás:
+-legkisebb egység: Literálok - konstansok
+-A Python key sensitive false/False mást jelent
+-500_000 írása a kódban - kiírni így fogja: 500000
+-String pythonban több soros is lehet
+-több soros string: """ string """
+-változó refaktoring: shift + f6
+-kódolási konvenció: PEP8
+-nincs tömb, range van
+
+Git:
+fejlesztő környezet--(commit) ->lokális repo--(push) -->remote repo
+
+
+
+
+** négyzetre emelés
+// egész osztás
+% maradékos
+
