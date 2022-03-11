@@ -20,6 +20,16 @@ def get_name(driver):
     content = driver.find_element(By.ID, "message-p").text
     return content
 
+def get_list_items(driver):
+    elements = driver.find_elements(By.TAG_NAME, "li")
+    print(elements)
+    items = []
+    for element in elements:
+        items.append(element.text)
+    print(items)
+    return items
+
+
 def test_say_hello():
     driver = go_to_page()
     fill_input_field(driver, "John Doe")
@@ -28,3 +38,8 @@ def test_say_hello():
     print(content)
     assert content == "Hello John Doe!" 
 
+
+def test_list():
+    driver = go_to_page()
+    items = get_list_items(driver)
+    assert items == ["Python", "HTML", "JavaScript"]
