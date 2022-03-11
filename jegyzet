@@ -59,3 +59,17 @@ fejlesztő környezet--(commit) ->lokális repo--(push) -->remote repo
 // egész osztás
 % maradékos
 
+
+
+03.11:
+cmd-ből történő git klónozás után létre kell hozni manuálisan a venvet és a pipet
+venv:
+c:\Users\Training\AppData\Local\Programs\Python\Python310\python.exe -m venv venv
+
+pip:
+venv\Scripts\activate
+pip install -r requirements.txt
+
+.gitignor fileba:
+.idea
+venv
