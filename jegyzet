@@ -73,3 +73,16 @@ pip install -r requirements.txt
 .gitignor fileba:
 .idea
 venv
+
+
+-live server extansion a vs codeba, html-nél megnyithatjuk egyből az oldalt jobklikkel
+github pages: ingyenes tárhelyszolgáltató
+publikálni lehet  githubon keresztül a weblapot: settings/pages/source-->master, root-->docs
+-css-ben adjuk meg a html oldal formázását -styles.css
+
+keretrendszer a teszteléshez:
+-pytest - nem része a pythonnak
+requirements.txt-be beírni a pytestet, aztán new terminal
+pip install -r requirements.txt
+
+a pytestben minden teszteset egy külön fv.
