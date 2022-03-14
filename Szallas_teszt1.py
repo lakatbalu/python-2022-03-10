@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-driver.get("https://python.org")
-driver.find_element(By.ID, "id-search-field").send_keys("precedence")
-driver.find_element(By.ID, "submit").click()
+driver.get("https://szallas.hu/kereses/egyszeru?search=")
+driver.find_element(By.ID, "location_header_input").send_keys("Fonyód")
+driver.find_element(By.ID, "header_search_button").click()
 print("end")

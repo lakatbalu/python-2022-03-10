@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def go_to_page():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.get("http://127.0.0.1:5500/Docs/index.html")
+    driver.get("https://lakatbalu.github.io/python-2022-03-10/")
     return driver
 
 def fill_input_field(driver, name):
@@ -36,3 +36,19 @@ content = get_name(driver)
 print(content)
 
 assert content == "Hello Jack Doe!" 
+
+driver = go_to_page()
+fill_input_field(driver, "Muki")
+click_on_button(driver)
+content = get_name(driver)
+print(content)
+
+assert content == "Hello Muki!" 
+
+driver = go_to_page()
+fill_input_field(driver, "Roni")
+click_on_button(driver)
+content = get_name(driver)
+print(content)
+
+assert content == "Hello Roni!" 
