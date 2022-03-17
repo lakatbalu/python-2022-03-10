@@ -1,10 +1,15 @@
+from urllib.parse import urljoin
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.remote.webdriver import WebDriver
 
-def test_search_pep(driver):
+@pytest.mark.fn_search
+@pytest.mark.milestone_1
+def test_search_pep(driver: WebDriver, base_url):
+    driver.get(base_url)
     driver.find_element(By.ID, "id-search-field").send_keys("pep")
     driver.find_element(By.ID, "submit").click()
 
@@ -12,7 +17,8 @@ def test_search_pep(driver):
     assert "pep" in first_link.lower()
 
 
-def test_about(driver):
+def test_about(driver, base_url):
+    driver.get(urljoin(base_url,"/about/"))
     driver.find_element(By.LINK_TEXT, "About").click()
 
     title = driver.title     #cím lekérdezése

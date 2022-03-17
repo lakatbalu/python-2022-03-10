@@ -7,5 +7,5 @@ from webdriver_manager.chrome import ChromeDriverManager
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.get("https://python.org")
+   # driver.get(base_url)
     return driver
