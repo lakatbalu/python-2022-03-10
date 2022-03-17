@@ -31,3 +31,7 @@ paragraph = "alma,körte,barack,meggy"
 fruits = paragraph.split(",")
 print(fruits)
 
+
+
+
+
