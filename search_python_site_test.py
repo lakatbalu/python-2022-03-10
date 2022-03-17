@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.remote.webdriver import WebDriver
 
 @pytest.mark.fn_search
-@pytest.mark.milestone_1
+@pytest.mark.basic
 def test_search_pep(driver: WebDriver, base_url):
     driver.get(base_url)
     driver.find_element(By.ID, "id-search-field").send_keys("pep")
@@ -25,5 +25,6 @@ def test_about(driver, base_url):
     assert "about" in title.lower()
     
 
-
+#content > div > section > div.notification-bar.notification-bar--survey > span.notification-bar__message
+#//*[@id="content"]/div/section/div[1]/span[2]
 
