@@ -38,14 +38,6 @@ print(content)
 assert content == "Hello Jack Doe!" 
 
 driver = go_to_page()
-fill_input_field(driver, "Muki")
-click_on_button(driver)
-content = get_name(driver)
-print(content)
-
-assert content == "Hello Muki!" 
-
-driver = go_to_page()
 fill_input_field(driver, "Roni")
 click_on_button(driver)
 content = get_name(driver)
