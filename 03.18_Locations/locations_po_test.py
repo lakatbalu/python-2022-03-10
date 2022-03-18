@@ -1,8 +1,12 @@
 
 from LocationsMainPage import LocationsMainPage
+import requests
 
 
 def test_create(driver):
+    
+    requests.delete("http://localhost:8080/api/locations")
+
     page = LocationsMainPage(driver)
     page.open()
     page.click_create_location_link()
