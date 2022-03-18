@@ -1,3 +1,4 @@
+from lib2to3.pgen2 import driver
 from urllib.parse import urljoin
 import pytest
 from selenium import webdriver
@@ -18,6 +19,10 @@ class LocationsMainPage:
         self.driver.get("http://localhost:8080")
 
     def click_create_location_link(self):
+
+        WebDriverWait(self.driver, 10).until(
+        EC.visibility_of_element_located((By.LINK_TEXT, "Create Location")))
+        
         create_new_button = self.driver.find_element(By.ID, "create-location-link")
         create_new_button.click()
 
