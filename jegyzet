@@ -37,7 +37,7 @@ https://mtmi.unideb.hu/pluginfile.php/554/mod_resource/content/3/thinkcspy3.pdf
 venv könyvtárba soha nem nyúlunk bele, nem töltjük fel gitre sem
 virtual enviroment
 Keyboard shortcuts
-file:///C:/Program%20Files%20(x86)/JetBrains/PyCharm%20Community%20Edition%202021.3.2/help/ReferenceCard.pdf
+
 
 Programozás:
 -legkisebb egység: Literálok - konstansok
@@ -86,3 +86,19 @@ requirements.txt-be beírni a pytestet, aztán new terminal
 pip install -r requirements.txt
 
 a pytestben minden teszteset egy külön fv.
+
+
+hasznos linkek:
+https://selenium-python.readthedocs.io/index.html                                           - selenium-python doksi
+https://mtmi.unideb.hu/pluginfile.php/554/mod_resource/content/3/thinkcspy3.pdf             - python könyv
+https://qameta.io/allure-report/                                                            -advanced report generáló
+
+
+cmd parancsok:
+új klónozás után:
+python -m venv venv
+pip install -r requirements.txt
+
+pytest -m "milestone_1"                  -ezzel a markerrel ellátottat futtatja
+pytest --baseurl https://.......         -a leírt base url-lel futtatja le
+pytest -m "milestone_1" --html=report.html --self-contained-html
