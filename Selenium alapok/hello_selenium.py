@@ -36,7 +36,10 @@ content = get_name(driver)
 print(content)
 
 assert content == "Hello Jack Doe!" 
+<<<<<<< HEAD:hello_selenium.py
  
+=======
+>>>>>>> d2c3ae634c1cf9f1708ee09167ecde17e6f0408d:Selenium alapok/hello_selenium.py
 
 driver = go_to_page()
 fill_input_field(driver, "Roni")
